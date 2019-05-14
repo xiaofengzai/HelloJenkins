@@ -1,0 +1,30 @@
+server:
+  port: 8081
+spring:
+  profiles:
+    active: test
+---
+spring:
+  profiles: local
+---
+server:
+  port: 8082
+spring:
+  profiles: dev
+---
+server:
+  port: 8083
+spring:
+  profiles: test
+
+---
+server:
+  port: 8083
+spring:
+  profiles: stage
+
+---
+server:
+  port: 8084
+spring:
+  profiles: online
